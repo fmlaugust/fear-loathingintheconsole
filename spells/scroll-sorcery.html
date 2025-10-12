@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Sorcery | Gonzo Web Magic</title>
+    <link rel="stylesheet" href="scroll-sorcery.css">
+</head>
+<body>
+    <div class="psychedelic-bg"></div>
+    
+    <header class="hero fade-in">
+        <h1 class="glitch" data-text="SCROLL SORCERY">SCROLL SORCERY</h1>
+        <p class="subtitle">We were somewhere around Barstow on the edge of the desert when the animations began to take hold...</p>
+        <p class="mantra">"We don't get got. We go get!"</p>
+    </header>
+
+    <nav class="gonzo-nav slide-in-left">
+        <a href="../index.html" class="back-link">← Back to the Madness</a>
+    </nav>
+
+    <main class="container">
+        <section class="intro-section fade-in-up">
+            <h2>The Intersection Observer Trip</h2>
+            <p>Listen: You can't stop here. This is scroll country. We're going to teach your page to come alive without making users want to throw their laptop out a window.</p>
+            <p>No jQuery bloat. No janky setTimeout nonsense. Just pure, uncut Intersection Observer API—the good stuff.</p>
+            <div class="mantra-box">
+                <p>Remember: <strong>We don't get got. We go get!</strong></p>
+                <p>And right now, we're going to GET these scroll animations working.</p>
+            </div>
+        </section>
+
+        <section class="demo-section slide-in-right">
+            <div class="demo-card">
+                <h3>Fade In Elements</h3>
+                <p>Watch these bad boys appear as you scroll. Smooth. Professional. Not annoying.</p>
+                <p class="tech-note">Class: <code>.fade-in</code></p>
+            </div>
+        </section>
+
+        <section class="demo-section slide-in-left">
+            <div class="demo-card">
+                <h3>Slide From The Sides</h3>
+                <p>Left, right, doesn't matter. These elements know how to make an entrance.</p>
+                <p class="tech-note">Classes: <code>.slide-in-left</code> or <code>.slide-in-right</code></p>
+            </div>
+        </section>
+
+        <section class="demo-section zoom-in">
+            <div class="demo-card">
+                <h3>Zoom Into View</h3>
+                <p>A little scale action never hurt nobody. Except maybe squares who don't appreciate good UX.</p>
+                <p class="tech-note">Class: <code>.zoom-in</code></p>
+            </div>
+        </section>
+
+        <section class="demo-section rotate-in">
+            <div class="demo-card">
+                <h3>Rotate Reality</h3>
+                <p>Because sometimes you need to bend space-time just a little bit.</p>
+                <p class="tech-note">Class: <code>.rotate-in</code></p>
+            </div>
+        </section>
+
+        <section class="code-section fade-in-up">
+            <h2>The Recipe for Madness</h2>
+            <div class="code-explanation">
+                <h3>Step 1: Mark Your Targets</h3>
+                <p>Add classes to elements you want to animate. We're using data attributes for maximum control.</p>
+                <pre><code>&lt;div class="fade-in-up"&gt;Your content here&lt;/div&gt;</code></pre>
+            </div>
+
+            <div class="code-explanation">
+                <h3>Step 2: Let the Observer Do Its Thing</h3>
+                <p>The JavaScript watches for elements entering the viewport. When they do—BAM—animation triggers.</p>
+                <pre><code>const observer = new IntersectionObserver(entries => {
+    // magic happens here
+});</code></pre>
+            </div>
+
+            <div class="code-explanation">
+                <h3>Step 3: CSS Does the Heavy Lifting</h3>
+                <p>Transitions and transforms handle the visual madness. Keep it smooth, keep it 60fps.</p>
+                <pre><code>transform: translateY(50px);
+opacity: 0;
+transition: all 0.8s ease;</code></pre>
+            </div>
+        </section>
+
+        <section class="final-section scale-in">
+            <div class="gonzo-quote">
+                <h3>The #100Devs Way</h3>
+                <p class="big-mantra">We don't get got. We go get!</p>
+                <p>And today, we got scroll animations that don't suck. Tomorrow? Who knows. Maybe we'll animate the entire internet.</p>
+            </div>
+        </section>
+
+        <section class="cta-section pulse-in">
+            <h2>Ready to Make Your Pages Breathe?</h2>
+            <p>Scroll animations done right: subtle, performant, and cooler than a penguin's toenails.</p>
+            <a href="../index.html" class="cta-button">Back to the Collection</a>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>Built with #100Devs wisdom and a healthy dose of gonzo journalism</p>
+        <p class="footer-mantra">We don't get got. We go get! 🚀</p>
+        <p>No developers were harmed in the making of these animations</p>
+    </footer>
+
+    <script src="scroll-sorcery.js"></script>
+</body>
+</html>
