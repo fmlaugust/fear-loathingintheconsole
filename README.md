@@ -18,18 +18,18 @@ A 23-week #100Devs journey captured in two projects: my personal dev diary and a
 
 ## 📑 Table of Contents  
 
-- [About The Project](#about-the-project)  
-- [Key Features](#key-features)  
-- [Purpose](#purpose)  
-- [Built With](#built-with)  
-- [Features](#features)  
-- [Reusable Rituals & Favorite Spells](#reusable-rituals--favorite-spells)  
-- [Notes Left in the Moonlight](#notes-left-in-the-moonlight)  
-- [Deployment](#deployment)  
-- [Inspiration](#inspiration)  
-- [Target Audience](#target-audience)  
-- [Contact](#contact)  
-- [License](#license)  
+- [About The Project](#-about-the-project)  
+- [Key Features](#-key-features)  
+- [Purpose](#-purpose)  
+- [Built With](#-built-with)  
+- [Features](#-features)  
+- [Reusable Rituals & Favorite Spells](#-reusable-rituals--favorite-spells)  
+- [Notes Left in the Moonlight](#-notes-left-in-the-moonlight)  
+- [Deployment](#-deployment)  
+- [Inspiration](#-inspiration)  
+- [Target Audience](#-target-audience)  
+- [Contact](#-contact)  
+- [License](#-license)  
 
 ---
 
@@ -82,15 +82,14 @@ A 23-week #100Devs journey captured in two projects: my personal dev diary and a
 - **JWT** – Secure authentication  
 
 ### 🧩 Libraries & APIs  
-- **React Router** – Frontend routing for SPA  
-- **Axios / Fetch** – API requests  
-- **Intersection Observer API** – Scroll-triggered animations & lazy loading  
-- **Custom Animations** – Smooth UI interactions  
+- React Router – Frontend routing for SPA  
+- Axios / Fetch – API requests  
+- Intersection Observer API – Scroll-triggered animations & lazy loading  
+- Custom Animations – Smooth UI interactions  
 
 ### 🛠️ Tools & Development  
 - **VS Code** ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)  
 - **Git & GitHub** ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)  
-- **GitHub Actions** ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)  
 - Chrome DevTools – Debugging  
 - Postman – API testing  
 - Figma / Wireframes – UX & UI design  
@@ -172,4 +171,5 @@ Half-baked ideas, abandoned designs, and future magic waiting to be born.
 ## 📝 License  
 
 [MIT License](https://opensource.org/licenses/MIT)  
-  
+
+---
