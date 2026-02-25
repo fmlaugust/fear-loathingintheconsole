@@ -3,131 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 01: HTML & The Semantic Ritual | Fear & Loathing in the Console</title>
-    
+    <meta name="description" content="Week 1 dispatch from Fear & Loathing in the Console — Classes 1 & 2 of #100Devs. The Trough of Sorrow, the job market truth bomb, and why we are all Beyoncé.">
+    <title>Week 1: Buy the Ticket | Fear & Loathing in the Console</title>
+
+    <!-- Fonts (same as index) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../style.css"> 
+
+    <!-- Site stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Diary-specific styles only -->
+    <link rel="stylesheet" href="week-01.css">
 </head>
 <body>
-    
+
     <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
-                <h1><a href="../index.html" class="nav-link" style="text-decoration:none; color:inherit;">🔮 Fear & Loathing in the Console</a></h1>
-                <p class="tagline">The 23-Week Campaign Log</p>
+                <h1>🔮 Fear & Loathing in the Console</h1>
+                <p class="tagline">Where the #100Devs Mission meets <strong>Gonzo Reality</strong>.</p>
             </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#diary" class="nav-link">Weekly Log</a></li>
+                <li><a href="../index.html#spells" class="nav-link">Code Spells</a></li>
+                <li><a href="../index.html#graveyard" class="nav-link">Graveyard</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main class="section">
-        <div class="container">
-            
-            <header class="text-center" style="margin-bottom: 4rem;">
-                <p class="hero-subtitle" style="text-align: center; margin-bottom: 0;">#100Devs Campaign Log</p>
-                <h1 class="hero-title glitch" data-text="Week 01: HTML & The Semantic Ritual">Week 01: HTML & The Semantic Ritual</h1>
-                <p class="section-description">Date Range: November 10-November 14, 2025</p>
-            </header>
-            
-            <section id="reflection" class="section" style="padding-top: 0; margin-bottom: 5rem;">
-                <h2 class="section-title"><span class="section-icon">🍸</span> The Gonzo Dispatch: Or, How We Made It Through</h2>
-                <div class="about-section" style="padding: 2rem; border-radius: 10px;">
-                    <p style="font-size: 1.1rem; line-height: 1.8; font-style: italic; color: var(--gold);">
-                        "The week started with the unsettling truth: HTML is not just putting words on a page. It's a **semantic ritual**, a whispered covenant with the machine to give meaning to chaos. I felt like a tourist who'd accidentally stumbled onto a dark, powerful ceremony. The easy part, they said! Lies. By Wednesday, I had developed a deep, almost personal hatred for the **`<img>`** tag, which insisted on shattering my layout dreams. Fueled by three days of the kind of coffee that strips paint and the faint echo of Leon telling us to stick to the plan, we carved out our first piece of the web. It's hideous, but it is **ours**. We survived the foundation. Barely."
-                    </p>
-                </div>
-            </section>
+    <main id="main">
 
-            <section id="lessons" class="section code-magic" style="padding-top: 0; margin-bottom: 5rem;">
-                <h2 class="section-title"><span class="section-icon">📚</span> Core Rituals: The Incantations Learned</h2>
-                <div class="spell-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                    <div class="spell-card">
-                        <h3>Main Concept 1: Semantic HTML5</h3>
-                        <p>The core lesson: don't use a `<div>` for everything. Using tags like **`<header>`**, **`<main>`**, and **`<nav>`** is not just for pretty code; it's a critical pact with **Accessibility (A11Y)** and **SEO**. It provides meaning to screen readers and search engines.</p>
-                    </div>
-                    <div class="spell-card">
-                        <h3>Main Concept 2: Basic CSS Selectors</h3>
-                        <p>Learned how to target elements using **element names**, **classes (`.`)**, and **IDs (`#`)**. Discovered that the real magic is in the `class` selector—the ID is an artifact for emergencies and single-use spells. CSS files should not be written in blood, even if it feels right.</p>
-                    </div>
-                    <div class="spell-card">
-                        <h3>Homework Task: The Resume Gauntlet</h3>
-                        <p>The goal: build a fully semantic, styled HTML-only resume/CV page. A pure test of structure and styling without external frameworks. The final product is a document of my past, built on the foundations of my future.</p>
-                        <a href="[LINK_TO_YOUR_WEEK01_REPO]" class="card-link">View the Gauntlet (GitHub)</a>
-                    </div>
+        <!-- DISPATCH HEADER -->
+        <header class="dispatch-header">
+            <div class="container">
+                <div class="dispatch-meta-top">
+                    <span class="dispatch-tag">Field Dispatch</span>
+                    <span class="dispatch-tag">Week 01</span>
+                    <span class="dispatch-tag">Classes 1 &amp; 2</span>
+                    <span class="dispatch-tag status">🟡 In The Trough</span>
                 </div>
-            </section>
+                <h2 class="dispatch-title glitch" data-text="Buy the Ticket, Take the Ride.">Buy the Ticket, Take the Ride.</h2>
+                <p class="dispatch-subtitle">
+                    The truth about the job market no one tells you, why clicking "Apply" is basically arson, and the reason we are all, undeniably, Beyoncé.
+                </p>
+                <div class="dispatch-dateline">
+                    <span>📅 Feb 24, 2026</span>
+                    <span>⏱ ~8 min read</span>
+                    <span>🎓 #100Devs</span>
+                </div>
+            </div>
+        </header>
 
-            <section id="challenges" class="section" style="padding-top: 0; margin-bottom: 5rem;">
-                <h2 class="section-title"><span class="section-icon">⚔️</span> The Scars: Bug Battles & Aha Moments</h2>
-                
-                <div class="timeline" style="max-width: 100%; margin: 0;">
-                    <div class="timeline-item" style="width: 100%; left: 0 !important;">
-                        <div class="timeline-dot" style="left: -10px;"></div>
-                        <h3>Challenge: The Curse of Relative Paths</h3>
-                        <p>The first major hurdle: linking the CSS file to the HTML. Spent 40 minutes staring at a plain black-and-white page, realizing I had used **`/style.css`** (absolute path from the root) instead of **`../style.css`** (relative path for subfolders). The machine is mercilessly literal.</p>
+        <!-- OPENING -->
+        <section class="section visible diary-section">
+            <div class="container diary-container">
+
+                <p class="drop-cap">Nobody tells you it starts with a gut punch. Before a single line of code is written, before you've even cracked open a text editor, the instructor stands up and informs you that <strong>the field is oversaturated with people who don't know what they're doing</strong> — and that learning to code will only be a small slice of what actually gets you hired. Half the people who landed jobs through this program didn't even have a technical interview. Half. Let that marinate.</p>
+
+                <p>Welcome to #100Devs. Buy the ticket, take the ride.</p>
+
+                <blockquote class="pull-quote">
+                    "Clicking 'Apply' on job boards is like lighting your resume on fire."
+                    <cite>— Leon, Class 1</cite>
+                </blockquote>
+
+                <p>This isn't a coding bootcamp. That's the first thing to understand — and it was repeated so many times across both classes that my notes started to look like a manifesto. <strong>This is a jobs program.</strong> The code is the vehicle; the job is the destination. And the engine that actually moves you forward? Networking. Community. Consistency. Showing up when you don't feel like it.</p>
+
+                <p>Class 2 opened with the declaration: <em>"We are all Beyoncé."</em> And you know what? I believe it. Not because the vibes are immaculate (they are), but because Beyoncé doesn't leave anything to chance. She plans. She executes. She doesn't trip. That's the energy we're supposed to bring to this.</p>
+
+                <!-- SECTION: THE MISSION -->
+                <div class="diary-section-marker">
+                    <span>🎯</span>
+                    <h3>The Mission</h3>
+                </div>
+
+                <p>Two classes in and the curriculum is already firing on multiple levels. The technical content is real — we touched the client-server model, the three pillars of the web, semantic HTML — but the meta-curriculum is just as heavy: <em>how to learn, how to stay in the game, how to not fall apart when it gets hard.</em></p>
+
+                <p>The web has three pillars. HTML is the skeleton — structure, content, the bones of everything. CSS is the skin — it makes the bones look like something. JavaScript is the organs — the behavior, the interactivity, the thing that makes it alive. <strong>Separation of Concerns</strong> means you keep them in separate files. Why? Organization. Readability. So when something breaks at 2am you're not drowning in one unholy file of spaghetti. (Leon would never.)</p>
+
+                <!-- CODE SPELL -->
+                <div class="spell-card code-spell-card">
+                    <span class="card-badge">⚗️ First Spell Acquired · Semantic HTML</span>
+                    <pre class="code-block"><code>&lt;!-- The bad old days — don't do this --&gt;
+&lt;div class="title"&gt;My Heading&lt;/div&gt;
+
+&lt;!-- The correct ritual --&gt;
+&lt;h1&gt;My Heading&lt;/h1&gt;
+&lt;p&gt;This is content that means something.&lt;/p&gt;
+
+&lt;!-- Lists: they matter more than you think --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Unordered — for things without sequence&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered — for recipes, steps, directions&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Assistive devices love these --&gt;
+&lt;em&gt;Emphasis (screen readers notice this)&lt;/em&gt;
+&lt;strong&gt;Strong importance (not just visual bold)&lt;/strong&gt;</code></pre>
+                    <p class="spell-note">Why it matters: Semantic HTML isn't just being a good citizen — it's Google actually indexing your work, screen readers actually reading it, and clients getting the accessibility compliance they need. Also, morally, we are mandated to do good. That's the rule.</p>
+                </div>
+
+                <p>We also did <strong>Lab #1: Brownies.</strong> A humble HTML recipe page. Sounds simple until you're staring at the VS Code hints in the comments and realizing the whole point isn't the brownies — it's learning to read documentation, follow structure, and not panic. We were warned: no extensions yet. Learn the manual way first so you know what the tools are actually doing.</p>
+
+                <!-- SECTION: TROUGH OF SORROW -->
+                <div class="diary-section-marker">
+                    <span>🕳️</span>
+                    <h3>The Trough of Sorrow</h3>
+                </div>
+
+                <p>Both classes circled back to this: the emotional journey of learning to code has a known shape. There's an initial high — you're excited, everything clicks, you feel like you could build Instagram by Tuesday. And then. <em>The trough.</em></p>
+
+                <p>It's the period where nothing makes sense, the excitement has worn off, and the gap between what you want to make and what you can actually make feels like the Grand Canyon. Most people quit here. The whole program is essentially an elaborate, community-powered machine for getting you through to the other side.</p>
+
+                <blockquote class="pull-quote">
+                    "If it's not on the calendar, it don't get got."
+                    <cite>— Leon, Class 2</cite>
+                </blockquote>
+
+                <!-- BATTLE LOG -->
+                <div class="spell-grid battle-grid">
+                    <div class="spell-card battle-card victories-card">
+                        <h3>🔑 Survival Protocol</h3>
+                        <ul class="battle-list">
+                            <li>Manage your frustration — it's a known feature, not a bug</li>
+                            <li>Stay consistent — no chunking, spread it out daily</li>
+                            <li>Take care of yourself — you can't code when you're broken</li>
+                            <li>Find your tribe — community is the actual cheat code</li>
+                            <li>Make a plan — month → week → day → task</li>
+                        </ul>
                     </div>
-                    
-                    <div class="timeline-item" style="width: 100%; left: 0 !important;">
-                        <div class="timeline-dot" style="left: -10px; background: var(--gold);"></div>
-                        <h3>Breakthrough: Finally Understanding the `alt` Attribute!</h3>
-                        <p>That beautiful moment when Leon drilled home that **`alt`** is not just a description, but a **substitute**. It's the text that replaces the image when it fails to load or for screen readers. It clicked that this tiny attribute is the first, simplest layer of true **developer empathy**.</p>
+                    <div class="spell-card battle-card casualties-card">
+                        <h3>💀 How People Fall</h3>
+                        <ul class="battle-list">
+                            <li>Clicking "Apply" on job boards without ever networking</li>
+                            <li>Passive learning — reading without recalling</li>
+                            <li>Chunking study into one big desperate block</li>
+                            <li>Leaving study time to chance instead of the calendar</li>
+                            <li>Trying to do this alone without a community</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            
-            <section id="code" class="section" style="padding-top: 0; margin-bottom: 5rem;">
-                <h2 class="section-title"><span class="section-icon">💻</span> The Spellbook Showcase: Code I'm Proud Of</h2>
-                <p class="section-description">A small, functional snippet of code I wrote this week that makes me feel like a CodeWitch—the semantic bones of the project.</p>
-                <pre style="background: var(--midnight); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--electric-blue); font-family: 'JetBrains Mono', monospace; overflow-x: auto;">
-<code style="color: var(--silver);">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;title&gt;My Code Resume&lt;/title&gt;
-        &lt;link rel="stylesheet" href="../style.css"&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;header&gt;
-            &lt;h1&gt;[Your Name] - Web Developer&lt;/h1&gt;
-            &lt;p&gt;The journey begins here.&lt;/p&gt;
-        &lt;/header&gt;
-        &lt;main&gt;
-            &lt;section id="skills"&gt;&lt;/section&gt;
-            &lt;section id="experience"&gt;&lt;/section&gt;
-        &lt;/main&gt;
-        &lt;footer&gt;
-            &lt;small&gt;&amp;copy; 2025&lt;/small&gt;
-        &lt;/footer&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code>
-                </pre>
-            </section>
-        </div>
+
+                <!-- SECTION: THE LEARNING RITUAL -->
+                <div class="diary-section-marker">
+                    <span>🧠</span>
+                    <h3>The Learning Ritual</h3>
+                </div>
+
+                <p>Here's the part that broke my note-taking brain: <strong>you're not supposed to take notes.</strong> Traditional notes are a trap. Reading something, highlighting it, and feeling like you've learned it is a lie your brain tells you. The science backs this up — go take Dr. Barbara Oakley's "Learning How to Learn" (free, Coursera, will rewire how you study everything).</p>
+
+                <p><strong>Active Recall</strong> means you read something once, close the notes, and force yourself to reconstruct what you just consumed. The struggle to remember IS the learning. The friction is the point.</p>
+
+                <p><strong>Spaced Repetition</strong> means you don't cram. You review at increasing intervals — right before you'd forget it. The tool: <strong>Anki</strong> (apps.ankiweb.net). Free. The whole program can be done without spending a dollar, and anyone who tells you otherwise is selling something.</p>
+
+                <p>The note-taking shift: instead of writing facts, write <em>questions.</em> "What is spaced repetition?" is a better note than "spaced repetition = reviewing at intervals." One is passive. One makes you a developer.</p>
+
+                <!-- ANKI DECK -->
+                <div class="spell-card anki-card-deck">
+                    <h3>🃏 This Week's Anki Deck — Click Any Card to Flip</h3>
+                    <div class="anki-cards">
+                        <div class="anki-card" onclick="this.classList.toggle('revealed')">
+                            <span class="anki-q">What is a Frontend Developer?</span>
+                            <span class="anki-hint">flip ↓</span>
+                            <div class="anki-answer">A developer who writes code for the client side — the browser, the interface, what the user sees and interacts with. HTML, CSS, JS in the browser.</div>
+                        </div>
+                        <div class="anki-card" onclick="this.classList.toggle('revealed')">
+                            <span class="anki-q">What is a Backend Developer?</span>
+                            <span class="anki-hint">flip ↓</span>
+                            <div class="anki-answer">A developer who writes code for the server side — databases, server logic, APIs. The stuff the user never sees but everything depends on.</div>
+                        </div>
+                        <div class="anki-card" onclick="this.classList.toggle('revealed')">
+                            <span class="anki-q">What is a Fullstack Developer?</span>
+                            <span class="anki-hint">flip ↓</span>
+                            <div class="anki-answer">Someone who writes code on both sides — client AND server. This is the target. JS runs on both, which is why it's the only language we need for this program.</div>
+                        </div>
+                        <div class="anki-card" onclick="this.classList.toggle('revealed')">
+                            <span class="anki-q">What does "Separation of Concerns" mean?</span>
+                            <span class="anki-hint">flip ↓</span>
+                            <div class="anki-answer">HTML = content/structure. CSS = style. JS = behavior. Keep them in separate files so your code is readable, maintainable, and doesn't make future-you want to commit arson.</div>
+                        </div>
+                        <div class="anki-card" onclick="this.classList.toggle('revealed')">
+                            <span class="anki-q">Why does semantic HTML matter?</span>
+                            <span class="anki-hint">flip ↓</span>
+                            <div class="anki-answer">Accessibility (screen readers depend on it), SEO (Google's crawler reads semantic tags), maintainability, and morally — you are mandated to do good.</div>
+                        </div>
+                        <div class="anki-card" onclick="this.classList.toggle('revealed')">
+                            <span class="anki-q">What is Active Recall?</span>
+                            <span class="anki-hint">flip ↓</span>
+                            <div class="anki-answer">Reading something then closing your notes and forcing yourself to reconstruct it from memory. The struggle to recall IS the learning. No struggle = no encoding.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION: CASUALTIES & VICTORIES -->
+                <div class="diary-section-marker">
+                    <span>⚔️</span>
+                    <h3>Casualties &amp; Victories</h3>
+                </div>
+
+                <div class="spell-grid battle-grid">
+                    <div class="spell-card battle-card victories-card">
+                        <h3>✓ This Week's Wins</h3>
+                        <ul class="battle-list">
+                            <li>Shipped Lab #1 (Brownies). It exists. That counts.</li>
+                            <li>Set up Anki. First deck built. The ritual begins.</li>
+                            <li>Made it past the opening gut punch without fleeing.</li>
+                            <li>Actually understands WHY semantic HTML matters now.</li>
+                            <li>Month plan drafted. It's on the calendar.</li>
+                        </ul>
+                    </div>
+                    <div class="spell-card battle-card casualties-card">
+                        <h3>✗ The Wreckage</h3>
+                        <ul class="battle-list">
+                            <li>Class 1 notes were passive summaries. Had to redo them as questions.</li>
+                            <li>Still fuzzy on exactly where DNS fits in the HTTP request cycle.</li>
+                            <li>Didn't post to LinkedIn yet. Social accountability cheat code: uncast.</li>
+                            <li>Hot-linked an image in the brownie lab. It's already dead.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SECTION: HAUNTING -->
+                <div class="diary-section-marker">
+                    <span>👻</span>
+                    <h3>What's Haunting Me</h3>
+                </div>
+
+                <div class="spell-card haunting-card">
+                    <h3>Questions Still Rattling Around the Skull</h3>
+                    <ul class="haunting-list">
+                        <li>Where exactly does DNS fit in the full HTTP request cycle — in what order does it all happen?</li>
+                        <li>What's Leon's full GitHub personal learning plan — should I be templating my own right now?</li>
+                        <li>The Anki cards feel shallow at Week 1. When does the depth kick in?</li>
+                        <li>Who decides what HTML elements get deprecated and when?</li>
+                        <li>Getting a paying client in 6 weeks. SIX WEEKS. What does that even look like right now?</li>
+                    </ul>
+                </div>
+
+                <p>The client thing is the one that won't leave me alone. The expectation was stated plainly: six weeks in, start looking for a paying client. Not later. Not after you feel ready. The whole point is that you'll never feel ready, and the path to ready is through the work. I suspect this will make complete sense by Week 6 and absolutely zero sense until then.</p>
+
+                <!-- SECTION: FINAL TRANSMISSION -->
+                <div class="diary-section-marker">
+                    <span>📡</span>
+                    <h3>Final Transmission</h3>
+                </div>
+
+                <p>Two classes in, and the shape of this thing becomes clear: it's a program designed to produce people who know how to learn, how to network, and how to survive the psychological gauntlet of becoming a developer — and somewhere in there, they also learn to write code. The code is almost secondary. That's the most counterintuitive thing about it.</p>
+
+                <p>The motto is <strong>"We Don't Get Got. We Go Get."</strong> Which means: don't let the overwhelm take you. Don't let the trough swallow you. Be proactive. Be intentional. Make the time — don't find it. Plan the month. Put it on the calendar. Show up when you don't feel like it.</p>
+
+                <p><em>Be Beyoncé.</em></p>
+
+                <p class="sign-off">I am a software engineer committed to learning web development with #100Devs over the next 41 weeks. 🔮</p>
+
+                <!-- NEXT DISPATCH TEASER -->
+                <div class="spell-card next-dispatch-card">
+                    <span class="card-badge">Next Dispatch ⚡</span>
+                    <h3>Week 2: CSS Layout Rituals &amp; The Box Model Reckoning</h3>
+                    <p>Flexbox. Layouts. Making things actually look like something. The chaos continues.</p>
+                    <a href="week-02.html" class="card-link">Read Week 2 →</a>
+                </div>
+
+                <!-- NAV BETWEEN ENTRIES -->
+                <div class="entry-nav">
+                    <span></span>
+                    <a href="../index.html#diary" class="card-link">← Back to Campaign Log</a>
+                    <a href="week-02.html" class="card-link">Week 2 →</a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
-
-    <section class="section" style="padding: 2rem 0;">
-        <div class="container" style="display: flex; justify-content: space-between;">
-            <a href="#" class="spell-button" style="text-decoration: none; background: var(--witch-purple); opacity: 0.5; cursor: default;">
-                ← Previous Dispatch
-            </a>
-            <a href="week-02.html" class="spell-button" style="text-decoration: none;">
-                Next Dispatch →
-            </a>
-        </div>
-    </section>
 
     <footer class="site-footer">
         <div class="container">
             <div class="footer-bottom">
-                &copy; 2025 Fear & Loathing in the Console. Code is the Ritual.
+                &copy; 2026 Fear &amp; Loathing in the Console. All Rights Reserved. Code is the Ritual.
             </div>
         </div>
     </footer>
 
+    <!-- Site script -->
     <script src="../script.js"></script>
 </body>
 </html>

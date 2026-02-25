@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An unfiltered chronicle of the #100Devs bootcamp journey - 37+ weeks of code, chaos, and transformation into a full-stack developer.">
     <title>Fear & Loathing in the Console: A 100Devs Gonzo Diary</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,286 +18,414 @@
 </head>
 <body>
     
-    <nav class="main-nav">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <nav class="main-nav" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
                 <h1>🔮 Fear & Loathing in the Console</h1>
-                <p class="tagline">Where the #100Devs Mission meets **Gonzo Reality**.</p>
+                <p class="tagline">Where the #100Devs Mission meets <strong>Gonzo Reality</strong>.</p>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#capstone" class="nav-link">Behavioral Tracking System</a></li>
-                <li><a href="#diary" class="nav-link">23-Week Log</a></li>
+                <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="#latest" class="nav-link">Latest Updates</a></li>
+                <li><a href="#portfolio" class="nav-link">Professional Portfolio</a></li>
+                <li><a href="#diary" class="nav-link">Weekly Log</a></li>
                 <li><a href="#spells" class="nav-link">Code Spells</a></li>
                 <li><a href="#graveyard" class="nav-link">Graveyard</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="[YOUR_GITHUB_URL]" class="nav-link">GitHub</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title glitch" data-text="Fear & Loathing in the Console">Fear & Loathing in the Console</h2>
-            <p class="hero-subtitle">"**Buy the ticket, take the ride.**" The raw 23-week archive of the #100Devs path to mastery.</p>
-            <div class="crystal-ball"></div>
-            <div class="hero-actions">
-                <button class="spell-button" onclick="document.getElementById('capstone').scrollIntoView({behavior: 'smooth'})">Begin the Campaign ✨</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="capstone" class="section black-barbie-section">
-        <div class="container">
-    <h2 class="section-title">
-        <span class="section-icon">🌎</span>
-        Behavioral Tracking System: The Final Manifestation
-    </h2>
-    <p class="section-description">
-        **The #100Devs Capstone.** A full-stack application designed to help teachers track, document, and analyze student behaviors to improve classroom management and student outcomes.
-        <br><br>
-        Built using the **MERN Stack**: **MongoDB** (database), **Express** (server framework), **React** (frontend library), and **Node.js** (runtime environment).
-    </p>
-</div>
-
-            <div class="spell-grid">
-                <div class="spell-card chronicles-card">
-                    <h3>Live Demo & Experience 🚀</h3>
-                    <p>Interact with the live, deployed application. Explore user flows and test features.</p>
-                    <a href="[CAPSTONE_LIVE_DEMO_URL]" class="card-link">Enter the Realm</a>
-                </div>
-                <div class="spell-card chronicles-card">
-                    <h3>Code Grimoire (GitHub) 📖</h3>
-                    <p>View the complete source code, review commit history, and examine the project architecture.</p>
-                    <a href="[CAPSTONE_GITHUB_URL]" class="card-link">View the Source</a>
-                </div>
-                <div class="spell-card chronicles-card">
-                    <h3>Technical Deep Dive 📐</h3>
-                    <p>Detailed documentation on the architecture, database schema, API design, and key development challenges.</p>
-                    <a href="capstone/deep-dive.html" class="card-link">Read the Docs</a>
-                </div>
-                <div class="spell-card chronicles-card">
-                    <h3>Design & UX Rituals 🎨</h3>
-                    <p>The wireframes, user stories, and UI/UX decisions that guided the design of the platform.</p>
-                    <a href="capstone/design-ux.html" class="card-link">See the Vision</a>
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title glitch" data-text="Fear & Loathing in the Console">Fear & Loathing in the Console</h2>
+                <p class="hero-subtitle">"<strong>Buy the ticket, take the ride.</strong>" The raw, ongoing chronicle of the #100Devs path to mastery.</p>
+                <div class="hero-actions">
+                    <button class="spell-button" onclick="document.getElementById('latest').scrollIntoView({behavior: 'smooth'})">Begin the Journey ✨</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="diary" class="section dangerous-vibe">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon">🧠</span>
-                The 23-Week Log: The Campaign Diary
-            </h2>
-            <p class="section-description">
-                The **unfiltered chronicle** of 69 classes, capstone building, and the struggle for technical enlightenment in the #100Devs bootcamp.
-            </p>
+        <!-- Latest Updates Section -->
+        <section id="latest" class="section black-barbie-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-icon">⚡</span>
+                    Latest Dispatches from the Trenches
+                </h2>
+                <p class="section-description">
+                    The most recent chapters in this ongoing saga. Updated weekly as the journey continues.
+                </p>
 
-            <div class="spell-grid">
-                <div class="spell-card">
-                    <h3>Week 1: HTML & Foundations ✨</h3>
-                    <p>The starting point. Covered basic HTML structure and CSS selectors. Key learning: The importance of semantic HTML.</p>
-                    <a href="diary/week-01.html" class="card-link">Read Week 1 Recap</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 2: CSS Layout Rituals 📐</h3>
-                    <p>The Box Model, CSS Resets, and the first taste of Flexbox magic. Learning to wrangle the chaos of the page.</p>
-                    <a href="diary/week-02.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 3: Responsive Design Sorcery 📱</h3>
-                    <p>Media Queries, Viewports, and making your code behave across all screens. The true test of a developer.</p>
-                    <a href="diary/week-03.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 4: JavaScript Fundamentals I 💻</h3>
-                    <p>Variables, data types, and functions. The genesis of true programmatic power.</p>
-                    <a href="diary/week-04.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 5: JavaScript Fundamentals II 📊</h3>
-                    <p>Conditionals, loops, and arrays. Controlling the flow of execution and taming data structures.</p>
-                    <a href="diary/week-05.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 6: The DOM & Events 🔮</h3>
-                    <p>Manipulating the Document Object Model and reacting to user inputs. Bringing the page to life.</p>
-                    <a href="diary/week-06.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 7: API Adventures I 🌐</h3>
-                    <p>Introduction to Fetch, async/await, and RESTful principles. Summoning data from external sources.</p>
-                    <a href="diary/week-07.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 8: API Adventures II & CRUD 🛠️</h3>
-                    <p>Mastering Create, Read, Update, Delete (CRUD) operations via APIs. Full-stack interaction begins.</p>
-                    <a href="diary/week-08.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 9: Server-Side Foundations ☁️</h3>
-                    <p>Introduction to Node.js, Express, and setting up the local server environment. The back-end awakening.</p>
-                    <a href="diary/week-09.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 10: State Management ⚛️</h3>
-                    <p>Deep dive into state. Covered context, reducers, and global state patterns. Challenge: Asynchronous state updates.</p>
-                    <a href="diary/week-10.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 11: MongoDB & Mongoose Rituals 💾</h3>
-                    <p>Setting up the NoSQL database and schema modeling. The ritual of persistence.</p>
-                    <a href="diary/week-11.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 12: Authentication Spells 🔒</h3>
-                    <p>User registration, login, hashing, and JWTs. Securing the realm from digital demons.</p>
-                    <a href="diary/week-12.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 13: MVC Architecture 🏗️</h3>
-                    <p>Model-View-Controller pattern for scalable backend design. Organizing the chaos.</p>
-                    <a href="diary/week-13.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 14: EJS Templating & Views 📄</h3>
-                    <p>Generating dynamic HTML with server-side templates. Making the server work for the client.</p>
-                    <a href="diary/week-14.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 15: Introduction to React 🚀</h3>
-                    <p>Components, JSX, and the virtual DOM. The shift to a modern, component-based frontend.</p>
-                    <a href="diary/week-15.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 16: React Props & State 🔄</h3>
-                    <p>Managing data flow in React applications. The heart of the single-page application.</p>
-                    <a href="diary/week-16.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 17: React Hooks (useState/useEffect) 🎣</h3>
-                    <p>The modern way to manage component logic and side effects. Mastering the new ritual tools.</p>
-                    <a href="diary/week-17.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 18: Advanced Frontend Routing 🧭</h3>
-                    <p>Implementing client-side routing with React Router. Creating true multi-page feel in a SPA.</p>
-                    <a href="diary/week-18.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 19: Capstone Planning & Design 📋</h3>
-                    <p>Shifting focus to the final project. User stories, wireframes, and technical architecture planning.</p>
-                    <a href="diary/week-19.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 20: Capstone Development I 🔨</h3>
-                    <p>First week of focused capstone building. Setting up the repo and initial MERN stack connection.</p>
-                    <a href="diary/week-20.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 21: Capstone Development II 🏃</h3>
-                    <p>Mid-project sprint. Implementing core features and battling state management demons.</p>
-                    <a href="diary/week-21.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 22: Deployment & Final Touches 🚀</h3>
-                    <p>Preparing the Capstone for the wild web. Deployment strategies, environment variables, and bug fixes.</p>
-                    <a href="diary/week-22.html" class="card-link">Dispatch Coming Soon...</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Week 23: The Final Rite 🎉</h3>
-                    <p>Submission, reflection, and the final moments of the 23-week campaign. The transition to job-seeking.</p>
-                    <a href="diary/week-23.html" class="card-link">Dispatch Coming Soon...</a>
+                <div class="spell-grid">
+                    <article class="spell-card featured-card">
+                        <span class="card-badge">Latest Entry</span>
+                        <h3>Week 37: [Current Week Title] 🔥</h3>
+                        <p class="card-date">Updated: [Current Date]</p>
+                        <p>Brief preview of what happened this week - the victories, the bugs, the existential debugging crises...</p>
+                        <a href="diary/week-37.html" class="card-link">Read This Week's Saga</a>
+                    </article>
+                    
+                    <article class="spell-card">
+                        <h3>Week 36: [Previous Week Title] 📝</h3>
+                        <p class="card-date">[Previous Date]</p>
+                        <p>Quick summary of last week's adventures in code...</p>
+                        <a href="diary/week-36.html" class="card-link">Read Entry</a>
+                    </article>
+                    
+                    <article class="spell-card">
+                        <h3>Week 35: [Week Title] 🎯</h3>
+                        <p class="card-date">[Date]</p>
+                        <p>Another week, another set of challenges conquered...</p>
+                        <a href="diary/week-35.html" class="card-link">Read Entry</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="spells" class="section code-magic">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon">🔧</span>
-                Reusable Rituals & Favorite Spells
-            </h2>
-            <p class="section-description">Magical utility code kept in the back pocket - components, animations, and shortcuts that spark joy.</p>
-            <div class="spell-grid">
-                <div class="spell-card">
-                    <h3>Modal Magic ✨</h3>
-                    <p>Accessible modal components with smooth animations that don't make users want to throw their computers.</p>
-                    <a href="spells/modal-magic.html" class="card-link">Cast Spell</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Scroll Sorcery 🌟</h3>
-                    <p>Intersection Observer animations and scroll effects that make pages feel alive without being obnoxious.</p>
-                    <a href="spells/scroll-sorcery.html" class="card-link">Bewitch Scrolling</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Git Incantations 🌿</h3>
-                    <p>Command line spells for when you've messed up your repo and need divine intervention.</p>
-                    <a href="spells/git-incantations.html" class="card-link">Save My Code</a>
+        </section>
+
+        <!-- Professional Portfolio Gateway -->
+        <section id="portfolio" class="section portfolio-gateway">
+            <div class="container">
+                <div class="portfolio-cta">
+                    <h2 class="section-title">
+                        <span class="section-icon">🎨</span>
+                        The Professional Realm
+                    </h2>
+                    <p class="portfolio-description">
+                        This is the diary. The messy, honest, week-by-week chronicle of learning to code.
+                        <br><br>
+                        For the <strong>polished portfolio</strong> — the finished projects, case studies, and hire-me materials — step through the portal:
+                    </p>
+                    <div class="portfolio-button-container">
+                        <a href="[YOUR_PROFESSIONAL_PORTFOLIO_URL]" class="portfolio-button" target="_blank" rel="noopener noreferrer">
+                            View My Professional Portfolio →
+                        </a>
+                    </div>
+                    <p class="portfolio-note">Complete projects • Technical case studies • Client-ready work</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="graveyard" class="section dangerous-vibe">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="section-icon">💡</span>
-                Notes Left in the Moonlight
-            </h2>
-            <p class="section-description">Half-baked ideas, abandoned designs, and future magic waiting to be born. The beautiful cemetery of creative ambition.</p>
-            
-            <div class="spell-grid">
-                <div class="spell-card">
-                    <h3>Sleeping Projects 😴</h3>
-                    <p>Paused but not forgotten - projects waiting for the right moment, better skills, or just more caffeine.</p>
-                    <a href="graveyard/sleeping-projects.html" class="card-link">Wake the Dead</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Dream Sketches 🎨</h3>
-                    <p>Wild concept art, wireframes drawn at 2am, midnight inspirations, and designs that seemed genius in the dark.</p>
-                    <a href="graveyard/dream-sketches.html" class="card-link">Enter Dreams</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Future Spells 🔮</h3>
-                    <p>Technologies to learn next, skills on the horizon, and the ever-growing list of "things I should probably know by now."</p>
-                    <a href="graveyard/future-spells.html" class="card-link">See Tomorrow</a>
-                </div>
-                <div class="spell-card">
-                    <h3>Abandoned Aesthetics 💀</h3>
-                    <p>Design directions that didn't make it, color schemes that got murdered, and layouts that were too beautiful for this world.</p>
-                    <a href="graveyard/abandoned-aesthetics.html" class="card-link">Mourn Beauty</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Complete Weekly Diary Archive -->
+        <section id="diary" class="section dangerous-vibe">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-icon">📚</span>
+                    The Complete Campaign Log: 37+ Weeks & Counting
+                </h2>
+                <p class="section-description">
+                    The <strong>unfiltered chronicle</strong> of every class, every project, and every hard-won lesson from the #100Devs bootcamp. This is the raw material of transformation.
+                </p>
 
-    <section id="about" class="about-section section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About the CodeWitch</h2>
-                    <p>I am a full-stack developer in training, graduating from the **#100Devs bootcamp**. This portfolio is a record of the journey—the **23-week campaign** to master modern web technologies and secure a role in the industry.</p>
-                    <p>My work is driven by a passion for **clean, functional code** wrapped in unique, immersive aesthetics. Expect sharp technical insight delivered with a **Gonzo-style honesty** about the chaos of the learning process.</p>
-                    <div class="about-links">
-                        <a href="[LINK_TO_RESUME]" class="about-link">Download Résumé</a>
-                        <a href="[LINK_TO_LINKEDIN]" class="about-link">LinkedIn Profile</a>
+                <!-- Phase 1: Foundations -->
+                <div class="diary-phase">
+                    <h3 class="phase-title">Phase I: HTML, CSS & The Foundations (Weeks 1-8)</h3>
+                    <div class="spell-grid">
+                        <article class="spell-card">
+                            <h4>Week 1: HTML & Foundations ✨</h4>
+                            <p>The starting point. Basic HTML structure and CSS selectors. Key learning: The importance of semantic HTML.</p>
+                            <a href="diary/week-01.html" class="card-link">Read Week 1</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 2: CSS Layout Rituals 🔧</h4>
+                            <p>The Box Model, CSS Resets, and the first taste of Flexbox magic.</p>
+                            <a href="diary/week-02.html" class="card-link">Read Week 2</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 3: Responsive Design Sorcery 📱</h4>
+                            <p>Media Queries, Viewports, and making code behave across all screens.</p>
+                            <a href="diary/week-03.html" class="card-link">Read Week 3</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 4: JavaScript Fundamentals I 💻</h4>
+                            <p>Variables, data types, and functions. The genesis of true programmatic power.</p>
+                            <a href="diary/week-04.html" class="card-link">Read Week 4</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 5: JavaScript Fundamentals II 📊</h4>
+                            <p>Conditionals, loops, and arrays. Controlling the flow of execution.</p>
+                            <a href="diary/week-05.html" class="card-link">Read Week 5</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 6: The DOM & Events 🔮</h4>
+                            <p>Manipulating the Document Object Model and reacting to user inputs.</p>
+                            <a href="diary/week-06.html" class="card-link">Read Week 6</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 7: API Adventures I 🌐</h4>
+                            <p>Introduction to Fetch, async/await, and RESTful principles.</p>
+                            <a href="diary/week-07.html" class="card-link">Read Week 7</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 8: API Adventures II & CRUD 🛠️</h4>
+                            <p>Mastering Create, Read, Update, Delete operations via APIs.</p>
+                            <a href="diary/week-08.html" class="card-link">Read Week 8</a>
+                        </article>
                     </div>
                 </div>
-                <div class="about-visual">
-                    Your Profile Photo/Aesthetic Placeholder
+
+                <!-- Phase 2: Backend -->
+                <div class="diary-phase">
+                    <h3 class="phase-title">Phase II: Backend & Server-Side Magic (Weeks 9-14)</h3>
+                    <div class="spell-grid">
+                        <article class="spell-card">
+                            <h4>Week 9: Server-Side Foundations ☁️</h4>
+                            <p>Introduction to Node.js, Express, and local server environment.</p>
+                            <a href="diary/week-09.html" class="card-link">Read Week 9</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 10: State Management ⚛️</h4>
+                            <p>Deep dive into state. Context, reducers, and global state patterns.</p>
+                            <a href="diary/week-10.html" class="card-link">Read Week 10</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 11: MongoDB & Mongoose Rituals 💾</h4>
+                            <p>Setting up NoSQL database and schema modeling.</p>
+                            <a href="diary/week-11.html" class="card-link">Read Week 11</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 12: Authentication Spells 🔐</h4>
+                            <p>User registration, login, hashing, and JWTs.</p>
+                            <a href="diary/week-12.html" class="card-link">Read Week 12</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 13: MVC Architecture 🗝️</h4>
+                            <p>Model-View-Controller pattern for scalable backend design.</p>
+                            <a href="diary/week-13.html" class="card-link">Read Week 13</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 14: EJS Templating & Views 📄</h4>
+                            <p>Generating dynamic HTML with server-side templates.</p>
+                            <a href="diary/week-14.html" class="card-link">Read Week 14</a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Phase 3: React -->
+                <div class="diary-phase">
+                    <h3 class="phase-title">Phase III: React & Modern Frontend (Weeks 15-18)</h3>
+                    <div class="spell-grid">
+                        <article class="spell-card">
+                            <h4>Week 15: Introduction to React 🚀</h4>
+                            <p>Components, JSX, and the virtual DOM.</p>
+                            <a href="diary/week-15.html" class="card-link">Read Week 15</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 16: React Props & State 🔄</h4>
+                            <p>Managing data flow in React applications.</p>
+                            <a href="diary/week-16.html" class="card-link">Read Week 16</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 17: React Hooks (useState/useEffect) 🎣</h4>
+                            <p>The modern way to manage component logic and side effects.</p>
+                            <a href="diary/week-17.html" class="card-link">Read Week 17</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 18: Advanced Frontend Routing 🧭</h4>
+                            <p>Implementing client-side routing with React Router.</p>
+                            <a href="diary/week-18.html" class="card-link">Read Week 18</a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Phase 4: Capstone & Beyond -->
+                <div class="diary-phase">
+                    <h3 class="phase-title">Phase IV: Capstone Project & Career Prep (Weeks 19-37+)</h3>
+                    <div class="spell-grid">
+                        <article class="spell-card">
+                            <h4>Week 19: Capstone Planning & Design 📋</h4>
+                            <p>User stories, wireframes, and technical architecture planning.</p>
+                            <a href="diary/week-19.html" class="card-link">Read Week 19</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 20: Capstone Development I 🔨</h4>
+                            <p>Setting up the repo and initial MERN stack connection.</p>
+                            <a href="diary/week-20.html" class="card-link">Read Week 20</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 21: Capstone Development II 🏃</h4>
+                            <p>Mid-project sprint. Implementing core features.</p>
+                            <a href="diary/week-21.html" class="card-link">Read Week 21</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 22: Deployment & Final Touches 🚀</h4>
+                            <p>Preparing for the wild web. Deployment strategies and bug fixes.</p>
+                            <a href="diary/week-22.html" class="card-link">Read Week 22</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 23: The First Milestone 🎉</h4>
+                            <p>Capstone submission and reflection on the journey so far.</p>
+                            <a href="diary/week-23.html" class="card-link">Read Week 23</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 24: [Week Title] 📝</h4>
+                            <p>The journey continues...</p>
+                            <a href="diary/week-24.html" class="card-link">Read Week 24</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 25: [Week Title] 📝</h4>
+                            <p>More adventures in code...</p>
+                            <a href="diary/week-25.html" class="card-link">Read Week 25</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 26: [Week Title] 📝</h4>
+                            <p>Continuing the campaign...</p>
+                            <a href="diary/week-26.html" class="card-link">Read Week 26</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 27: [Week Title] 📝</h4>
+                            <p>The grind continues...</p>
+                            <a href="diary/week-27.html" class="card-link">Read Week 27</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 28: [Week Title] 📝</h4>
+                            <p>Week 28's lessons and battles...</p>
+                            <a href="diary/week-28.html" class="card-link">Read Week 28</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 29: [Week Title] 📝</h4>
+                            <p>Another week in the trenches...</p>
+                            <a href="diary/week-29.html" class="card-link">Read Week 29</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 30: [Week Title] 📝</h4>
+                            <p>Week 30's journey...</p>
+                            <a href="diary/week-30.html" class="card-link">Read Week 30</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 31: [Week Title] 📝</h4>
+                            <p>Continuing the mission...</p>
+                            <a href="diary/week-31.html" class="card-link">Read Week 31</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 32: [Week Title] 📝</h4>
+                            <p>Week 32's adventures...</p>
+                            <a href="diary/week-32.html" class="card-link">Read Week 32</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 33: [Week Title] 📝</h4>
+                            <p>More code, more lessons...</p>
+                            <a href="diary/week-33.html" class="card-link">Read Week 33</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 34: [Week Title] 📝</h4>
+                            <p>Week 34's chronicles...</p>
+                            <a href="diary/week-34.html" class="card-link">Read Week 34</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 35: [Week Title] 📝</h4>
+                            <p>The saga continues...</p>
+                            <a href="diary/week-35.html" class="card-link">Read Week 35</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 36: [Week Title] 📝</h4>
+                            <p>Week 36's battles...</p>
+                            <a href="diary/week-36.html" class="card-link">Read Week 36</a>
+                        </article>
+                        <article class="spell-card">
+                            <h4>Week 37: [Current Week] 🔥</h4>
+                            <p>The most recent chapter...</p>
+                            <a href="diary/week-37.html" class="card-link">Read Week 37</a>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <!-- Code Spells Section -->
+        <section id="spells" class="section code-magic">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-icon">🔧</span>
+                    Reusable Rituals & Favorite Spells
+                </h2>
+                <p class="section-description">Magical utility code kept in the back pocket - components, animations, and shortcuts that spark joy.</p>
+                <div class="spell-grid">
+                    <article class="spell-card">
+                        <h3>Modal Magic ✨</h3>
+                        <p>Accessible modal components with smooth animations that don't make users want to throw their computers.</p>
+                        <a href="spells/modal-magic.html" class="card-link">Cast Spell</a>
+                    </article>
+                    <article class="spell-card">
+                        <h3>Scroll Sorcery 🌟</h3>
+                        <p>Intersection Observer animations and scroll effects that make pages feel alive without being obnoxious.</p>
+                        <a href="spells/scroll-sorcery.html" class="card-link">Bewitch Scrolling</a>
+                    </article>
+                    <article class="spell-card">
+                        <h3>Git Incantations 🌿</h3>
+                        <p>Command line spells for when you've messed up your repo and need divine intervention.</p>
+                        <a href="spells/git-incantations.html" class="card-link">Save My Code</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <!-- Graveyard Section -->
+        <section id="graveyard" class="section dangerous-vibe">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-icon">💀</span>
+                    Notes Left in the Moonlight
+                </h2>
+                <p class="section-description">Half-baked ideas, abandoned designs, and future magic waiting to be born. The beautiful cemetery of creative ambition.</p>
+                
+                <div class="spell-grid">
+                    <article class="spell-card">
+                        <h3>Sleeping Projects 😴</h3>
+                        <p>Paused but not forgotten - projects waiting for the right moment, better skills, or just more caffeine.</p>
+                        <a href="graveyard/sleeping-projects.html" class="card-link">Wake the Dead</a>
+                    </article>
+                    <article class="spell-card">
+                        <h3>Dream Sketches 🎨</h3>
+                        <p>Wild concept art, wireframes drawn at 2am, midnight inspirations, and designs that seemed genius in the dark.</p>
+                        <a href="graveyard/dream-sketches.html" class="card-link">Enter Dreams</a>
+                    </article>
+                    <article class="spell-card">
+                        <h3>Future Spells 🔮</h3>
+                        <p>Technologies to learn next, skills on the horizon, and the ever-growing list of "things I should probably know by now."</p>
+                        <a href="graveyard/future-spells.html" class="card-link">See Tomorrow</a>
+                    </article>
+                    <article class="spell-card">
+                        <h3>Abandoned Aesthetics 👀</h3>
+                        <p>Design directions that didn't make it, color schemes that got murdered, and layouts that were too beautiful for this world.</p>
+                        <a href="graveyard/abandoned-aesthetics.html" class="card-link">Mourn Beauty</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About the CodeWitch</h2>
+                        <p>I am a full-stack developer currently immersed in the <strong>#100Devs bootcamp</strong>. This site is my weekly diary—the ongoing <strong>37+ week campaign</strong> to master modern web technologies and transition into the industry.</p>
+                        <p>My work is driven by a passion for <strong>clean, functional code</strong> wrapped in unique, immersive aesthetics. Expect sharp technical insight delivered with a <strong>Gonzo-style honesty</strong> about the chaos, victories, and brutal realities of the learning process.</p>
+                        <p>This is the raw journey. For the polished results, visit my professional portfolio.</p>
+                        <div class="about-links">
+                            <a href="[YOUR_PROFESSIONAL_PORTFOLIO_URL]" class="about-link" target="_blank" rel="noopener noreferrer">Professional Portfolio</a>
+                            <a href="[LINK_TO_LINKEDIN]" class="about-link" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                            <a href="[LINK_TO_GITHUB]" class="about-link" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <img src="path-to-your-photo.jpg" alt="Your name - Full-stack developer" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-bottom">
-                &copy; 2025 Fear & Loathing in the Console. All Rights Reserved. Code is the Ritual.
+                &copy; 2026 Fear & Loathing in the Console. All Rights Reserved. Code is the Ritual.
             </div>
         </div>
     </footer>

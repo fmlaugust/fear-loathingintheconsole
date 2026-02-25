@@ -1,0 +1,420 @@
+/* week-01.css */
+/* Diary-specific styles only - extends style.css, never duplicates it */
+/* Uses CSS variables defined in style.css: --midnight, --deep-purple, --witch-purple,
+   --neon-pink, --electric-blue, --gold, --silver, --blood, --smoke, --glass */
+
+/* --- DISPATCH HEADER --- */
+.dispatch-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--midnight) 0%, var(--deep-purple) 60%, var(--witch-purple) 100%);
+    border-bottom: 2px solid var(--neon-pink);
+    position: relative;
+    overflow: hidden;
+}
+
+.dispatch-header::after {
+    content: '001';
+    position: absolute;
+    right: -0.05em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(10rem, 22vw, 20rem);
+    font-weight: 900;
+    color: rgba(255, 0, 110, 0.04);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.dispatch-meta-top {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.dispatch-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(255, 190, 11, 0.3);
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 190, 11, 0.05);
+}
+
+.dispatch-tag.status {
+    color: var(--silver);
+    border-color: rgba(199, 210, 254, 0.2);
+    background: rgba(199, 210, 254, 0.05);
+}
+
+.dispatch-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 900;
+    background: linear-gradient(45deg, var(--neon-pink), var(--electric-blue), var(--gold));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.dispatch-subtitle {
+    font-size: 1.2rem;
+    color: var(--silver);
+    font-style: italic;
+    max-width: 640px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.dispatch-dateline {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: var(--silver);
+    opacity: 0.6;
+}
+
+/* --- DIARY BODY LAYOUT --- */
+.diary-section {
+    opacity: 1;
+    transform: none;
+}
+
+.diary-container {
+    max-width: 800px;
+}
+
+.diary-container p {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--silver);
+    margin-bottom: 1.5rem;
+}
+
+/* Drop cap opening paragraph */
+.drop-cap::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    float: left;
+    line-height: 0.75;
+    margin: 0.1em 0.12em 0 0;
+    color: var(--neon-pink);
+    text-shadow: 0 0 30px rgba(255, 0, 110, 0.4);
+}
+
+/* --- PULL QUOTE --- */
+.pull-quote {
+    border-left: 3px solid var(--gold);
+    margin: 2.5rem 0;
+    padding: 0.5rem 0 0.5rem 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--gold);
+    text-shadow: 0 0 20px rgba(255, 190, 11, 0.2);
+    line-height: 1.4;
+}
+
+.pull-quote cite {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: var(--silver);
+    opacity: 0.6;
+    margin-top: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* --- SECTION MARKERS --- */
+.diary-section-marker {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3.5rem 0 1.5rem;
+    border-bottom: 1px solid var(--smoke);
+    padding-bottom: 1rem;
+}
+
+.diary-section-marker span {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.diary-section-marker h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-shadow: 0 0 15px rgba(255, 190, 11, 0.3);
+}
+
+/* --- CODE SPELL CARD --- */
+.code-spell-card {
+    margin: 2rem 0;
+}
+
+.code-block {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--silver);
+    overflow-x: auto;
+    white-space: pre;
+    margin: 1rem 0;
+    opacity: 0.9;
+}
+
+.spell-note {
+    font-style: italic;
+    color: var(--silver);
+    opacity: 0.7;
+    font-size: 0.95rem;
+    border-top: 1px solid var(--smoke);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* --- BATTLE LOG (victories / casualties) --- */
+.battle-grid {
+    margin: 1.5rem 0 2.5rem;
+}
+
+.battle-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.victories-card {
+    border-color: rgba(255, 190, 11, 0.4);
+}
+
+.victories-card h3 {
+    color: var(--gold);
+    text-shadow: 0 0 10px rgba(255, 190, 11, 0.3);
+}
+
+.casualties-card {
+    border-color: rgba(193, 18, 31, 0.4);
+}
+
+.casualties-card h3 {
+    color: var(--blood);
+    text-shadow: 0 0 10px rgba(193, 18, 31, 0.3);
+}
+
+.battle-list {
+    list-style: none;
+    padding: 0;
+}
+
+.battle-list li {
+    font-size: 0.95rem;
+    padding: 0.45rem 0 0.45rem 1.5rem;
+    border-bottom: 1px solid var(--smoke);
+    color: var(--silver);
+    position: relative;
+    line-height: 1.5;
+}
+
+.battle-list li:last-child {
+    border-bottom: none;
+}
+
+/* Unicode escapes - safe across all encodings */
+.victories-card .battle-list li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+}
+
+.casualties-card .battle-list li::before {
+    content: '\2717';
+    position: absolute;
+    left: 0;
+    color: var(--blood);
+}
+
+/* --- ANKI DECK --- */
+.anki-card-deck {
+    margin: 2rem 0;
+}
+
+.anki-card-deck > h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--silver);
+    opacity: 0.7;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+}
+
+.anki-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.anki-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--smoke);
+    border-left: 3px solid var(--electric-blue);
+    padding: 0.85rem 1.25rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.anki-card:hover {
+    border-color: var(--electric-blue);
+    background: rgba(131, 56, 236, 0.08);
+    transform: translateX(4px);
+}
+
+.anki-q {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--silver);
+    line-height: 1.5;
+}
+
+.anki-hint {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: var(--electric-blue);
+    opacity: 0.6;
+}
+
+.anki-answer {
+    display: none;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    font-style: italic;
+    font-size: 0.92rem;
+    color: var(--gold);
+    line-height: 1.6;
+}
+
+.anki-card.revealed {
+    border-left-color: var(--gold);
+    background: rgba(255, 190, 11, 0.05);
+}
+
+.anki-card.revealed .anki-answer {
+    display: block;
+}
+
+.anki-card.revealed .anki-hint {
+    display: none;
+}
+
+/* --- HAUNTING CARD --- */
+.haunting-card {
+    border-color: rgba(131, 56, 236, 0.4);
+    background: linear-gradient(135deg, rgba(131, 56, 236, 0.08), var(--glass));
+}
+
+.haunting-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--electric-blue);
+    margin-bottom: 1rem;
+}
+
+.haunting-list {
+    list-style: none;
+    padding: 0;
+}
+
+.haunting-list li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    border-bottom: 1px solid var(--smoke);
+    color: var(--silver);
+    font-style: italic;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    position: relative;
+}
+
+.haunting-list li:last-child {
+    border-bottom: none;
+}
+
+/* ghost emoji via unicode escape */
+.haunting-list li::before {
+    content: '\1F47B';
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 0.6rem;
+}
+
+/* --- SIGN OFF & NEXT DISPATCH --- */
+.sign-off {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px rgba(255, 0, 110, 0.3);
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.next-dispatch-card {
+    margin-top: 3rem;
+    text-align: center;
+    border-color: rgba(255, 190, 11, 0.3);
+}
+
+.next-dispatch-card h3 {
+    color: var(--gold);
+    margin: 0.75rem 0;
+}
+
+/* --- ENTRY NAVIGATION --- */
+.entry-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--smoke);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    .dispatch-title { font-size: 2rem; }
+    .pull-quote { font-size: 1.15rem; margin-left: 0; }
+    .dispatch-dateline { gap: 0.75rem; }
+    .drop-cap::first-letter { font-size: 3.5rem; }
+    .battle-grid { grid-template-columns: 1fr; }
+}
